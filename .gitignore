@@ -1,3 +1,7 @@
+# Conan output
+conanbuildinfo.cmake
+conaninfo.txt
+
 # Compiled Object files
 *.slo
 *.lo
