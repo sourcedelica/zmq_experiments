@@ -2,6 +2,9 @@
 conanbuildinfo.cmake
 conaninfo.txt
 
+# CLion
+.idea/
+
 # Compiled Object files
 *.slo
 *.lo

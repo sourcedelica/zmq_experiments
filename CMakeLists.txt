@@ -16,7 +16,7 @@ macro (add_executable _name)
 endmacro()
 
 # CAF
-include_directories(${CONAN_INCLUDE_DIRS_ZMQ})
+include_directories(${CONAN_INCLUDE_DIRS_ZMQCPP})
 
 # Boost
 find_package(Boost COMPONENTS REQUIRED chrono filesystem thread)
