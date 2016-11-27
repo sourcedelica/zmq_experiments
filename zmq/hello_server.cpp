@@ -3,7 +3,7 @@
 #include <string>
 #include <iostream>
 
-// Copied from zmqcpp/4.1.1@memsharded/stable test_package
+// Adapted from zmqcpp/4.1.1@memsharded/stable test_package
 int main() {
     //  Prepare our context and socket
     zmq::context_t context(1);

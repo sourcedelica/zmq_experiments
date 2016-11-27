@@ -7,15 +7,15 @@ set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
 include(conanbuildinfo.cmake)
 conan_basic_setup()
 
-# Automatically add CAF libs to all executables
+# Automatically add ZMQ lib to all executables
 macro (add_executable _name)
     _add_executable(${ARGV})
     if (TARGET ${_name})
-        target_link_libraries(${_name} ${CONAN_LIBS_ZMQ})
+        target_link_libraries(${_name} PRIVATE -lczmq -lzmq)
     endif()
 endmacro()
 
-# CAF
+# ZMQ
 include_directories(${CONAN_INCLUDE_DIRS_ZMQCPP})
 
 # Boost
